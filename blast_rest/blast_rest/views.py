@@ -33,7 +33,7 @@ class blastn(APIView):
                 try:
                    
                     query_file_object_tmp = tempfile.NamedTemporaryFile(delete=False)
-                    st = str(request.data['sequenc'])
+                    st = str(request.data['sequence'])
                     
                     query_file_object_tmp.write(bytes(st, 'utf-8'))
                     
